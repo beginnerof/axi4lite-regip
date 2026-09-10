@@ -8,6 +8,10 @@
 
 和我的另一个仓库 [rv32i-minisoc](https://github.com/beginnerof/rv32i-minisoc) 是互补关系：那边是 CPU 核 + 简易 MMIO 外设，这边聚焦标准总线从设备协议。
 
+## English Abstract
+
+A Verilog-2001 **AXI4-Lite slave + register bank** IP for learning SoC bus protocols. The design implements the five AXI-Lite channels with VALID/READY handshakes, independent AW/W capture and pairing, WSTRB byte enables, OKAY/SLVERR responses for illegal addresses, and RW / RO / W1S / W1C register semantics with an IRQ combine. A self-checking Icarus testbench covers reset defaults, both AW/W arrival orders, byte strobes, write protection, interrupt set/clear, error responses, and a random smoke test. See [docs/waveform.md](docs/waveform.md) for GTKWave viewing notes.
+
 ---
 
 ## 1. 背景知识
