@@ -1,0 +1,7 @@
+sim/
+*.vvp
+*.vcd
+*.out
+__pycache__/
+.vscode/
+.idea/
